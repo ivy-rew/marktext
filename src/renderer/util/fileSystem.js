@@ -1,7 +1,7 @@
 import path, { dirname } from 'path'
 import crypto from 'crypto'
 import { statSync } from 'fs'
-import fs, { constants } from 'fs/promises'
+import fs from 'fs/promises'
 import cp from 'child_process'
 import { tmpdir } from 'os'
 import dayjs from 'dayjs'

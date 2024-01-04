@@ -108,6 +108,7 @@
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "latest",
+    "eslint-friendly-formatter": "^4.0.1",
     "karma": "^6.3.17",
     "karma-chai": "^0.1.0",
     "karma-coverage": "^2.2.0",

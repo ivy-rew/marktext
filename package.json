@@ -69,7 +69,7 @@
     "unsplash-js": "^7.0.15",
     "vega": "^5.22.0",
     "vega-embed": "^6.20.8",
-    "vega-lite": "^5.2.0",
+    "vega-lite": "^5.2.0 <5.11.0",
     "vscode-ripgrep": "^1.12.1",
     "vue": "^2.7.0",
     "vue-electron": "^1.0.6",

@@ -1,19 +1,22 @@
 import vue from '@vitejs/plugin-vue2'
 import { defineConfig, splitVendorChunkPlugin } from 'vite'
 //import renderer from 'vite-plugin-electron-renderer'
-import { nodePolyfills } from 'vite-plugin-node-polyfills'
+//import { nodePolyfills } from 'vite-plugin-node-polyfills'
+import nodePolyfills from 'rollup-plugin-node-polyfills';
+import dynamicImport from 'vite-plugin-dynamic-import'
 
 // https://vitejs.dev/config
 export default defineConfig({
   plugins: [
     vue(),
     splitVendorChunkPlugin(),
-    //renderer()
+    renderer(),
     nodePolyfills({
       overrides: {
         "fs" : "memfs"
-      }
-    })
+      },
+    }),
+    dynamicImport(/* options */),
     // nodePolyfills({
     //   // To add only specific polyfills, add them here. If no option is passed, adds all polyfills
     //   include: ['path', 'fs'],
